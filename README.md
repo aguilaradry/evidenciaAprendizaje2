@@ -7,5 +7,7 @@ Nombres Integrantes:
 - Edwin Bernardo Villa Sánchez
 
 Programa: Ingeniería de Software y Datos
+
 Docente: Andrés Felipe Palacio
+
 Facultad Ingenierías y Ciencias Agropecuarias - Institución Universitaria Digital de Antioquia 2024
