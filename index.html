@@ -3,130 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos Destacados</title>
-    <!-- Bootstrap CSS -->
+    <title>Página Principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Estilo general */
         body {
             font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
         }
-
+    
         header {
-            background: linear-gradient(to right, #007bff, #6610f2);
+            background: linear-gradient(to right, #ec7063, #6610f2);
             color: white;
             padding: 20px 0;
+            text-align: center;
         }
-
-        h1, h2 {
-            font-weight: 600;
-        }
-
+    
         .navbar {
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+            .custom-nav {
+                font-size: 0.85rem;
+                /* Reduce el tamaño de la fuente */
+                text-align: right;
+                /* Alinea el texto a la derecha */
+            }
+    
+            .custom-nav .nav-item {
+                text-align: right;
+                /* Asegura que cada elemento esté alineado a la derecha */
+            }
+    
+            .custom-nav .nav-link {
+                padding-right: 0.5rem;
+                /* Agrega algo de espacio a la derecha para mejorar la estética */
+            }   
+        
         }
-
-        .card {
-            border: none;
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
+    
         footer {
             background-color: #222;
             color: #aaa;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        footer * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .btn-section {
+            margin-top: 20px;
+    
+        }
+    
+    
+        .justified-text {
+            text-align: justify;
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
+
+        .card {
+            background-color: #f0f0f0; /* Color de fondo */
+            border: 1px solid #ccc;    /* Borde */
+            border-radius: 10px;        /* Bordes redondeados */
+            padding: 20px;              /* Espaciado interno */
+            flex: 1;                    /* Hace que las cartas tengan la misma anchura */
+            min-height: 238px;          /* Altura mínima para las cartas */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Asegura que el contenido se distribuya */
         }
 
-        a:hover {
-            color: #007bff;
-        }
     </style>
 </head>
 <body>
-    <header class="text-center">
-        <h1>Bienvenido a mis Proyectos</h1>
-        <p class="lead">Explora mis trabajos destacados y colabora conmigo</p>
+    <!-- Header -->
+    <header>
+        <h1>Evidencias de Aprendizaje</h1>
+        <p class="lead">Explora nuestros proyectos y conoce más sobre cada uno</p>
     </header>
 
+    <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="index.html">Menú principal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                <ul class="navbar-nav ms-auto custom-nav">
+                    <!-- Sección: Página principal -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="portada.html">Portada</a>
+                    </li>
+                    <!-- Sección: Introducción -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduccion.html">Introducción</a>
+                    </li>
+                    <!-- Sección: Descripciones -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="descripcion-pagina.html">Descripción de la página y artículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="descripcion-tema.html">Descripción del tema de interés</a>
+                    </li>
+                    <!-- Sección: Objetivos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="objetivos.html">Objetivos</a>
+                    </li>
+                    <!-- Sección: Resultados y conclusiones -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="ryc.html">Resultados y Conclusiones</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <section id="projects" class="mt-5">
-            <h2 class="text-center">Proyectos Destacados</h2>
-            <div class="row mt-4">
-                <!-- Proyecto 1 -->
-                <div class="col-md-4">
-                    <a href="pagina-proyecto1.html">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 1</h5>
-                                <p class="card-text">Descripción breve del proyecto.</p>
-                                <a href="pagina-proyecto1.html" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Proyecto 2 -->
-                <div class="col-md-4">
-                    <a href="pagina-proyecto2.html">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 2</h5>
-                                <p class="card-text">Descripción breve del proyecto.</p>
-                                <a href="pagina-proyecto2.html" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Proyecto 3 -->
-                <div class="col-md-4">
-                    <a href="pagina-proyecto3.html">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Proyecto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto 3</h5>
-                                <p class="card-text">Descripción breve del proyecto.</p>
-                                <a href="pagina-proyecto3.html" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </a>
+    <!-- Página de Inicio -->
+    <main class="container contenedor my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Evidencia de aprendizaje 1</h5>
+                        <p class="card-text">Análisis y herramientas de extracción de datos.</p>
+                        <a href="https://drive.google.com/file/d/1bBRNDHeGuzAA9ld6LaCmoy953WkzKDSZ/view?usp=sharing"
+                            class="btn btn-primary" target="_blank">Ver más</a>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Evidencia de aprendizaje 2</h5>
+                        <p class="card-text">Optimizando la productividad en el mundo del software.</p>
+                        <a href="https://drive.google.com/file/d/1vwL3A2PpRQmFBNm3I_wBW6lixk0kjT1k/view?usp=sharing"
+                            class="btn btn-primary" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Evidencia de aprendizaje 3</h5>
+                        <p class="card-text">Optimización de procesos de desarrollo.</p>
+                        <!-- Botón Productos Encontrados -->
+                        <a href="productos_encontrados.html" class="btn btn-primary mb-3 d-block" target="_blank">Productos
+                            Encontrados</a>
+                        <!-- Botón Productos Rankeados -->
+                        <a href="productos_rankeados.html" class="btn btn-primary d-block" target="_blank">Productos
+                            Rankeados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2024 IUDIGITAL DE ANTIOQUIA. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Bootstrap JavaScript -->
