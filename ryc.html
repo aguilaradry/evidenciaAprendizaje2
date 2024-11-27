@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados y Conclusiones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        .justified-text {
+            text-align: justify;
+        }
+    
+        footer {
+            background-color: #222;
+            color: #aaa;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        footer * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card1 {
+            background-color: #f0f0f0; /* Color de fondo */
+            border: 1px solid #ccc;    /* Borde */
+            border-radius: 10px;             /* Espaciado interno */
+            flex: 1;                    /* Hace que las cartas tengan la misma anchura */
+            min-height: 238px;  
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Menú principal</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="portada.html">Portada</a></li>
+                    <li class="nav-item"><a class="nav-link" href="introduccion.html">Introducción</a></li>
+                    <li class="nav-item"></li><a class="nav-link" href="descripcion-pagina.html">Descripción de la página y artículo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descripcion-tema.html">Descripción del tema de interés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="objetivos.html">Objetivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ryc.html">Resultados y Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de Resultados y Conclusiones -->
+    <main class="container my-5 card shadow-lg p-4">
+        <h2 class="text-center mb-4">Resultados y Conclusiones</h2>
+        <h4><b>Resultados</b></h4>
+        <p class="justified-text">Durante la implementación de GitHub Actions para la automatización de procesos de desarrollo y despliegue, se logró configurar un flujo de trabajo (workflow) efectivo que permitió la automatización de varias tareas clave.</p>
+        <p class="justified-text">Automatización exitosa del pipeline de CI/CD: Se implementaron pipelines de Integración Continua (CI) y Entrega Continua (CD), los cuales se ejecutaron correctamente en el main de GitHub. Cada vez que se realizaba un push o pull request en la rama principal, el flujo de trabajo se activaba automáticamente, asegurando que el código se construyera, probara y desplegara sin intervención manual.</p>
+        <p class="justified-text">Escalabilidad y adaptabilidad: El proceso en este trabajo permitió demostrar la capacidad de GitHub Actions para escalar y adaptarse a cambios futuros en el flujo de trabajo. </p>
+        <p class="justified-text">Optimizar la estructura del repositorio: Aunque el repositorio debe ser bien estructurado y contener un archivo README claro, es importante también incluir otras prácticas como el uso de ramas adecuadas (por ejemplo, main, develop, feature, etc).</p>
+        <br>
+        <img class= "card shadow-lg p-4 mx-auto card1" src="imagenes/workflow.png" alt="configuración pipeline">
+        <br> <br>
+        <h4><b>Conclusiones</b></h4>
+        <p class="justified-text">La implementación de GitHub Actions como herramienta para automatizar los procesos de desarrollo y despliegue ha demostrado ser una estrategia exitosa para mejorar la eficiencia y la calidad del software.</p>
+        <p class="justified-text">Optimización de tiempos y recursos: La automatización del flujo de trabajo reduce considerablemente los tiempos necesarios para las tareas manuales, como la ejecución de pruebas y el despliegue. Esto ha permite liberar recursos que pueden enfocarse en tareas de mayor valor, como el desarrollo de nuevas funcionalidades.</p>
+        <p class="justified-text">Mejora en la calidad del software: La integración continua y las pruebas automatizadas han asegurado que los errores sean detectados y corregidos de manera temprana, lo que mejora la calidad general del código y reduce el riesgo de errores en producción.</p>
+        <p class="justified-text">Git y GitHub como herramientas esenciales de colaboración: La implementación de un sistema de control de versiones con Git y GitHub ha demostrado ser clave para la gestión eficiente del código fuente y la colaboración en equipo. El uso de ramas, commits detallados y la correcta gestión de pull requests ha facilitado la trazabilidad de los cambios y la colaboración fluida entre los miembros del equipo.</p>
+    
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IUDIGITAL DE ANTIOQUIA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
